@@ -26,6 +26,6 @@ function count(array, value) {
   return array.filter((nilai) => (nilai === value)).length
 };
 
-console.log("total data paling banyak keluar adalah", cariData(data1), "dengan jumlah", count(data1, 1))
-console.log("total data paling banyak keluar adalah", cariData(data2), "dengan jumlah", count(data2, 2))
-console.log("total data paling banyak keluar adalah", cariData(data3), "dengan jumlah", count(data3, 3))
+console.log("total data paling banyak keluar adalah", cariData(data1), "dengan jumlah", count(data1, cariData(data1)))
+console.log("total data paling banyak keluar adalah", cariData(data2), "dengan jumlah", count(data2, cariData(data2)))
+console.log("total data paling banyak keluar adalah", cariData(data3), "dengan jumlah", count(data3, cariData(data3)))
